@@ -1,0 +1,197 @@
+// paste into cesium sandcastle
+var viewer = new Cesium.Viewer('cesiumContainer', {
+    animation: false,
+    baseLayerPicker: false,
+    vrButton: false,
+    geocoder: false,
+    sceneModePicker: false,
+    timeline: false,
+    navigationHelpButton: false,
+    homeButton: false,
+    navigationInstructionsInitiallyVisible: false,
+    infobox: false,
+    selectionIndicator: false
+});
+viewer.scene.globe.show = false;
+viewer.scene.skyBox.show = false;
+viewer.scene.screenSpaceCameraController.enableCollisionDetection = false;
+viewer.entities.add({
+    id: 'start',
+    viewFrom: new Cesium.Cartesian3(100000, 0, 0),
+    position: new Cesium.Cartesian3(1, 1, 1),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(100, 100, 100),
+        material: Cesium.Color.YELLOW
+    }
+});
+
+var start = viewer.entities.getById('start');
+viewer.trackedEntity = start;
+viewer.entities.add({
+    position: new Cesium.Cartesian3(371, 3718, -3420),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(588, 588, 588)
+    }
+});
+viewer.entities.add({
+    position: new Cesium.Cartesian3(-3133, 4981, -1728),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(474, 474, 474)
+    }
+});
+viewer.entities.add({
+    position: new Cesium.Cartesian3(2805, -778, 2579),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(902, 902, 902)
+    }
+});
+viewer.entities.add({
+    position: new Cesium.Cartesian3(4779, 3933, 1991),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(223, 223, 223)
+    }
+});
+viewer.entities.add({
+    position: new Cesium.Cartesian3(-1985, -3354, 2263),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(314, 314, 314)
+    }
+});
+viewer.entities.add({
+    position: new Cesium.Cartesian3(-4037, 720, -3161),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(268, 268, 268)
+    }
+});
+viewer.entities.add({
+    position: new Cesium.Cartesian3(4558, 3979, 3297),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(635, 635, 635)
+    }
+});
+viewer.entities.add({
+    position: new Cesium.Cartesian3(2921, 1232, -1263),
+    ellipsoid: {
+        radii: new Cesium.Cartesian3(163, 163, 163)
+    }
+});
+viewer.entities.add({
+    polyline: {
+        arcType: Cesium.ArcType.NONE,
+        width: 4,
+        material: Cesium.Color.MAGENTA,
+        positions: [
+            new Cesium.Cartesian3(-3112, 770, -446),
+            new Cesium.Cartesian3(-3213, -2595, -1145)
+        ]
+    }
+});
+
+viewer.entities.add({
+    polyline: {
+        arcType: Cesium.ArcType.NONE,
+        width: 4,
+        material: Cesium.Color.MAGENTA,
+        positions: [
+            new Cesium.Cartesian3(-4028, -2665, -3605),
+            new Cesium.Cartesian3(-2906, -3488, 4705)
+        ]
+    }
+});
+viewer.entities.add({
+    polyline: {
+        arcType: Cesium.ArcType.NONE,
+        width: 4,
+        material: Cesium.Color.MAGENTA,
+        positions: [
+            new Cesium.Cartesian3(-2906, -3488, 4705),
+            new Cesium.Cartesian3(-4028, -2665, -3605)
+        ]
+    }
+});
+viewer.entities.add({
+    polyline: {
+        arcType: Cesium.ArcType.NONE,
+        width: 4,
+        material: Cesium.Color.MAGENTA,
+        positions: [
+            new Cesium.Cartesian3(2351, -4296, -811),
+            new Cesium.Cartesian3(4834, 170, 2887)
+        ]
+    }
+});
+viewer.entities.add({
+    polyline: {
+        arcType: Cesium.ArcType.NONE,
+        width: 4,
+        material: Cesium.Color.MAGENTA,
+        positions: [
+            new Cesium.Cartesian3(-4773, 1703, 217),
+            new Cesium.Cartesian3(-3321, 2221, -71)
+        ]
+    }
+});
+
+viewer.entities.add({
+    polyline: {
+        arcType: Cesium.ArcType.NONE,
+        width: 2,
+        positions: [
+            new Cesium.Cartesian3(1, 1, 1), // can't use 0,0,0 because cesium throws an exception
+            new Cesium.Cartesian3(-1008, -1841, 332),
+            new Cesium.Cartesian3(55, -3191, -792),
+            new Cesium.Cartesian3(-1448, -3996, 267),
+            new Cesium.Cartesian3(-2927, -2581, 588),
+            new Cesium.Cartesian3(-2446, -1604, -734),
+            new Cesium.Cartesian3(-2118, -277, -1966),
+            new Cesium.Cartesian3(-3414, 578, -971),
+            new Cesium.Cartesian3(-3112, 770, -446),
+            new Cesium.Cartesian3(-3213, -2595, -1145),
+            new Cesium.Cartesian3(-4529, -2062, -752),
+            new Cesium.Cartesian3(-4691, -1381, -2870),
+            new Cesium.Cartesian3(-3777, -481, -3791),
+            new Cesium.Cartesian3(-4028, -2665, -3605),
+            new Cesium.Cartesian3(-2906, -3488, 4705),
+            new Cesium.Cartesian3(-1794, -2451, 4954),
+            new Cesium.Cartesian3(-2205, -1410, 4578),
+            new Cesium.Cartesian3(-2996, -1702, 3310),
+            new Cesium.Cartesian3(-4888, -4482, 3631),
+            new Cesium.Cartesian3(-2906, -3488, 4705),
+            new Cesium.Cartesian3(-4028, -2665, -3605),
+            new Cesium.Cartesian3(-1369, -4745, -4845),
+            new Cesium.Cartesian3(-744, -1923, -3167),
+            new Cesium.Cartesian3(1955, -612, -3642),
+            new Cesium.Cartesian3(2492, 1566, -2049),
+            new Cesium.Cartesian3(3160, 3348, -1566),
+            new Cesium.Cartesian3(3577, 3534, -1755),
+            new Cesium.Cartesian3(4560, 3594, -1282),
+            new Cesium.Cartesian3(4799, 133, -380),
+            new Cesium.Cartesian3(3654, -3296, 3321),
+            new Cesium.Cartesian3(4224, -4113, 4334),
+            new Cesium.Cartesian3(3610, -4250, 2914),
+            new Cesium.Cartesian3(3253, -3326, -637),
+            new Cesium.Cartesian3(2548, -4155, -2353),
+            new Cesium.Cartesian3(2351, -4296, -811),
+            new Cesium.Cartesian3(4834, 170, 2887),
+            new Cesium.Cartesian3(4607, 346, 3384),
+            new Cesium.Cartesian3(2341, 1224, 2795),
+            new Cesium.Cartesian3(200, 2744, 1680),
+            new Cesium.Cartesian3(802, 4325, 715),
+            new Cesium.Cartesian3(987, 4024, 3453),
+            new Cesium.Cartesian3(1211, 4953, 4406),
+            new Cesium.Cartesian3(1401, 3150, 4959),
+            new Cesium.Cartesian3(-1959, 2672, 4857),
+            new Cesium.Cartesian3(-4549, 3789, 2408),
+            new Cesium.Cartesian3(-4457, 2303, 1117),
+            new Cesium.Cartesian3(-4773, 1703, 217),
+            new Cesium.Cartesian3(-3321, 2221, -71),
+            new Cesium.Cartesian3(-2471, 3775, -789),
+            new Cesium.Cartesian3(-1440, 4172, -2490),
+            new Cesium.Cartesian3(-396, 3982, -1972),
+            new Cesium.Cartesian3(-196, 2776, -1957),
+            new Cesium.Cartesian3(-111, 1916, -3382),
+            new Cesium.Cartesian3(2093, 4047, -4579),
+            new Cesium.Cartesian3(2877, 3527, -4131)
+        ]
+    }
+});
