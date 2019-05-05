@@ -1,4 +1,4 @@
-// paste into cesium sandcastle
+// paste into cesium sandcastle at https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/
 var viewer = new Cesium.Viewer('cesiumContainer', {
     animation: false,
     baseLayerPicker: false,
