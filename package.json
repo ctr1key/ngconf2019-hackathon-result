@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "dependencies": {
+        "@types/cesium": "^1.54.4",
+        "@types/node": "^11.13.8",
+        "amd-loader": "^0.0.8",
+        "cesium": "^1.56.1",
+        "node-tspsolver": "^1.0.1",
+        "rxjs": "^6.5.1",
+        "typescript": "^3.4.5",
+        "xmlhttprequest": "^1.8.0"
+    }
+}
